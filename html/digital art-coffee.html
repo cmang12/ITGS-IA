@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Coffee Series</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1 class="header">
+	Sweet Glaze
+	</h1>
+	
+	<nav id="navi"> 
+		<a href="index.html" class="btn">Home</a>
+		<a href="clay.html" class="btn">Clay</a> 
+		<a href="digital art.html" class="btn">Digital Art</a>
+		<a href="videos.html" class="btn">Videos</a>
+		<a href="contact.html" class="btn">Contact/Commissions</a>
+	</nav>
+	
+	<script>
+	
+	window.onscroll = function() {myFunction()};
+
+
+var navi = document.getElementById("navi");
+
+
+var sticky = navi.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navi.classList.add("sticky")
+  } else {
+    navi.classList.remove("sticky");
+  }
+}
+	</script>
+	<main> 
+		<div class="descbox">
+			<h3> Coffee Series</h3>
+			The coffee series is about comfort and feeling good. I really liked the coffee and light academia aesthetic so i wanted to put that in my art. These drawings would usually have a comfy vibe to it.</div>
+			<div class="textpage3"> click on the images to open lightbox! </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/brown/img-1.jpg" onclick="openModal();currentSlide(1)" alt="Appa Avatar Drawing" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Appa</div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/brown/img-2.jpg" onclick="openModal();currentSlide(2)" alt="Demon Girl Drawing" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Demon Girl </div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/brown/img-7.jpg" onclick="openModal();currentSlide(3)" alt="Chicken Drawing" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Chicken</div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/brown/img-5.jpg" onclick="openModal();currentSlide(4)" alt="Cottage Girl Drawing" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Cottage Girl</div>
+				</div>
+			 </div>
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/brown/img-12.jpg" onclick="openModal();currentSlide(5)" alt="Glasses Girl Drawing" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Chloe</div>
+				</div>
+			 </div>
+			<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/brown/img-14.jpg" onclick="openModal();currentSlide(6)" alt="Sweater Girl Drawing" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Rebecca</div>
+				</div>
+			 </div>
+			<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/brown/img-16.jpg" onclick="openModal();currentSlide(7)" alt="Marzia Fanart" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Marzia</div>
+				</div>
+			 </div>
+			
+		<div class="clearfix"> </div>
+		
+		
+		
+		<div id="myModal" class="modal"> 
+			<span class="close cursor" onclick="closeModal()">&times; </span>
+			<div class="modal-content">
+				<div class="mySlides"> 
+					<div class="numbertext">1/7</div>
+					<img src="../images/Digital Art/brown/img-1.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">2/7</div>
+					<img src="../images/Digital Art/brown/img-2.jpg" style="width:100%">
+				</div>
+			<div class="mySlides">
+					<div class="numbertext">3/7</div>
+					<img src="../images/Digital Art/brown/img-7.jpg" style="width:100%">
+				</div>
+			<div class="mySlides">
+					<div class="numbertext">4/7</div>
+					<img src="../images/Digital Art/brown/img-5.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">5/7</div>
+					<img src="../images/Digital Art/brown/img-12.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">6/7</div>
+					<img src="../images/Digital Art/brown/img-14.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">7/7</div>
+					<img src="../images/Digital Art/brown/img-16.jpg" style="width:100%">
+				</div>
+			
+
+				
+				<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onClick="plusSlides(1)">&#10095;</a>
+				
+				
+			</div> 
+		
+		</div> 
+		
+
+		</main>
+	
+	<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+ 
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+ 
+
+}
+</script>
+	
+	<footer>
+		<img src="../images/Logo/sweet glaze new.png" style="max-width: 10%">
+		<br>
+Copyright © Sweet Glaze 2020
+	</footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Miscellaneous</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1 class="header">
+	Sweet Glaze
+	</h1>
+	
+	<nav id="navi"> 
+		<a href="index.html" class="btn">Home</a>
+		<a href="clay.html" class="btn">Clay</a> 
+		<a href="digital art.html" class="btn">Digital Art</a>
+		<a href="videos.html" class="btn">Videos</a>
+		<a href="contact.html" class="btn">Contact/Commissions</a>
+	</nav>
+	
+	<script>
+	
+	window.onscroll = function() {myFunction()};
+
+
+var navi = document.getElementById("navi");
+
+
+var sticky = navi.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navi.classList.add("sticky")
+  } else {
+    navi.classList.remove("sticky");
+  }
+}
+	</script>
+	<main> 
+		<div class="descbox"> <h2>Miscellaneous</h2>
+		 Sometimes, I just engage in personal drawings that do not belong to any certain themes. These illusttations are spontaneous and allow me to be as creative as possible! </div>
+			<div class="textpage3"> click on the images to open lightbox! </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/miscellaneous/img-15.jpg" onclick="openModal();currentSlide(1)" alt="Rabbit Concepts" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Rabbit Concepts</div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/miscellaneous/img-17.jpg" onclick="openModal();currentSlide(2)" alt="Eliza Hamilton Illustration" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Burn-Eliza of Hamilton</div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/miscellaneous/img-18.jpg" onclick="openModal();currentSlide(3)" alt="Streetwear Girl Illustration" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Streetwear</div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/miscellaneous/img-22.jpg" onclick="openModal();currentSlide(4)" alt="Pastel Girl Illustration" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Pastel Girl</div>
+				</div>
+			 </div>
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/miscellaneous/img-23.jpg" onclick="openModal();currentSlide(5)" alt="Love you Chungha Drawing" width="300px" height="300px"> 
+				
+				<div class="desc"> Love you- Chungha</div>
+				</div>
+			 </div>
+			<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/miscellaneous/img-4.jpg" onclick="openModal();currentSlide(6)" alt="Chinese Comic" width="300px" height="300px"> 
+				
+				<div class="desc"> Chinese Comic</div>
+				</div>
+			 </div>
+			<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/miscellaneous/img-20.jpg" onclick="openModal();currentSlide(7)" alt="Rose in the Clouds drawing" width="300px" height="300px"> 
+				
+				<div class="desc"> Rose in the Clouds</div>
+				</div>
+			 </div>
+			<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/miscellaneous/img-24.jpg" onclick="openModal();currentSlide(8)" alt="Bird Illustration Semi-Realism" width="300px" height="300px"> 
+				
+				<div class="desc"> Bird- Semi-Realism</div>
+				</div>
+			 </div>
+			
+		
+		
+		<div class="clearfix"> </div>
+		
+		
+		
+		<div id="myModal" class="modal"> 
+			<span class="close cursor" onclick="closeModal()">&times; </span>
+			<div class="modal-content">
+				<div class="mySlides"> 
+					<div class="numbertext">1/8</div>
+					<img src="../images/Digital Art/miscellaneous/img-15.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">2/8</div>
+					<img src="../images/Digital Art/miscellaneous/img-17.jpg" style="width:100%">
+				</div>
+			<div class="mySlides">
+					<div class="numbertext">3/8</div>
+					<img src="../images/Digital Art/miscellaneous/img-18.jpg" style="width:100%">
+				</div>
+			<div class="mySlides">
+					<div class="numbertext">4/8</div>
+					<img src="../images/Digital Art/miscellaneous/img-22.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">5/8</div>
+					<img src="../images/Digital Art/miscellaneous/img-23.jpg" style="width:100%">
+				</div>
+			
+			<div class="mySlides">
+					<div class="numbertext">6/8</div>
+					<img src="../images/Digital Art/miscellaneous/img-4.jpg" style="width:100%">
+				</div>
+			
+			<div class="mySlides">
+					<div class="numbertext">7/8</div>
+					<img src="../images/Digital Art/miscellaneous/img-20.jpg" style="width:100%">
+				</div>
+			
+			<div class="mySlides">
+					<div class="numbertext">8/8</div>
+					<img src="../images/Digital Art/miscellaneous/img-24.jpg" style="width:100%">
+				</div>
+			
+			
+			
+
+				
+				<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onClick="plusSlides(1)">&#10095;</a>
+				
+				
+			</div> 
+		
+		</div> 
+		
+
+		</main>
+	
+	<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+ 
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+ 
+
+}
+</script>
+	
+	<footer>
+		<img src="../images/Logo/sweet glaze new.png" style="max-width: 10%">
+		<br>
+	Copyright © Sweet Glaze 2020
+	</footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<h1 class="header">
+	Sweet Glaze
+	</h1>
+	
+	<nav id="navi"> 
+		<a href="index.html" class="btn">Home</a>
+		<a href="clay.html" class="btn">Clay</a> 
+		<a href="digital art.html" class="btn">Digital Art</a>
+		<a href="videos.html" class="btn">Videos</a>
+		<a href="contact.html" class="btn">Contact/Commissions</a>
+	</nav>
+	
+	
+	<script>
+	
+	window.onscroll = function() {myFunction()};
+
+
+var navi = document.getElementById("navi");
+
+
+var sticky = navi.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navi.classList.add("sticky")
+  } else {
+    navi.classList.remove("sticky");
+  }
+}
+	</script>
+	
+	
+	<main class="parent">
+		<div class="home"> 
+			
+			<div class="section1">
+				<img src="../images/home icons/img-19.jpg">
+				Hello, I am Keira. I started this website with the help of my mom! 
+				I have always been interested in miniatures, clay and art in general as this has been an ongoing hobby since 2016 
+				when I was just 8 years old. With this website, I hope to share my love for art so please, enjoy your time here! 	
+			</div>
+		
+			<div class="section2">
+				
+				<div class="row">
+					
+					<a href="clay.html"> 
+					<img src="../images/home icons/IMG_4058.png" alt="Axolotl Icon" style="width:90%">
+					</a>
+					<div class="homedesc">I have always been into clay making! Click for more info!  </div>
+				
+				</div>
+				<div class="row">
+					<a href="digital art.html"> 
+					<img src="../images/home icons/IMG_1170.png" alt="Chicken Icon" style="width:90%">	
+					</a> 
+					<div class="homedesc">Digital Art is a fun past time. Click for more info! </div>
+				
+				
+				</div>
+				<div class="row">
+					<a href="videos.html">
+					<img src="../images/home icons/IMG_3446.png" alt="Sheep Icon" style="width:100%">
+					</a>
+					<div class="homedesc">I recently got into videomaking. Click for more info!  </div>
+				
+				</div>
+			</div>
+		
+		</div>
+	</main> 
+	
+	
+	
+	
+	
+	
+	<footer>
+		<img src="../images/Logo/sweet glaze new.png" style="max-width: 10%">
+		<br>
+	Copyright © Sweet Glaze 2020
+	
+	
+	</footer>
+</body>
+</html>

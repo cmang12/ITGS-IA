@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fantasy</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1 class="header">
+	Sweet Glaze
+	</h1>
+	
+	<nav id="navi"> 
+		<a href="index.html" class="btn">Home</a>
+		<a href="clay.html" class="btn">Clay</a> 
+		<a href="digital art.html" class="btn">Digital Art</a>
+		<a href="videos.html" class="btn">Videos</a>
+		<a href="contact.html" class="btn">Contact/Commissions</a>
+	</nav>
+	
+	<script>
+	
+	window.onscroll = function() {myFunction()};
+
+
+var navi = document.getElementById("navi");
+
+
+var sticky = navi.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navi.classList.add("sticky")
+  } else {
+    navi.classList.remove("sticky");
+  }
+}
+	</script>
+	<main> 
+		<div class="descbox"> <h2>Fantasy</h2>I really like to draw art where they are mystical and something unknown. I like to draw the person in these pictures have alot of emotion and these also brings out the creativity out of me.</div>
+			<div class="textpage3"> click on the images to open lightbox! </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/fantasy/img-3.jpg" onclick="openModal();currentSlide(1)" alt="Crying in the Clouds Illustration" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Crying in the Clouds</div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/fantasy/img-6.jpg" onclick="openModal();currentSlide(2)" alt="Sunset Glow Illustration" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Sunset Glow</div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/fantasy/img-19.jpg" onclick="openModal();currentSlide(3)" alt="Passing Daydreams Illustration" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Passing Daydreams</div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/fantasy/img-21.jpg" onclick="openModal();currentSlide(4)" alt="Reaching for the Moon Illustration" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Reaching for the Moon</div>
+				</div>
+			 </div>
+		
+			
+		<div class="clearfix"> </div>
+		
+		
+		
+		<div id="myModal" class="modal"> 
+			<span class="close cursor" onclick="closeModal()">&times; </span>
+			<div class="modal-content">
+				<div class="mySlides"> 
+					<div class="numbertext">1/4</div>
+					<img src="../images/Digital Art/fantasy/img-3.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">2/4</div>
+					<img src="../images/Digital Art/fantasy/img-6.jpg" style="width:100%">
+				</div>
+			<div class="mySlides">
+					<div class="numbertext">3/4</div>
+					<img src="../images/Digital Art/fantasy/img-19.jpg" style="width:100%">
+				</div>
+			<div class="mySlides">
+					<div class="numbertext">4/4</div>
+					<img src="../images/Digital Art/fantasy/img-21.jpg" style="width:100%">
+				</div>
+			
+				
+			
+			
+
+				
+				<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onClick="plusSlides(1)">&#10095;</a>
+				
+				
+			</div> 
+		
+		</div> 
+		
+
+		</main>
+	
+	<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+ 
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+ 
+
+}
+</script>
+	
+	<footer>
+		<img src="../images/Logo/sweet glaze new.png" style="max-width: 10%">
+		<br>
+	Copyright © Sweet Glaze 2020
+	</footer>
+</body>
+</html>

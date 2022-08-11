@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact/ Commissions</title>
+	
+	
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+
+	
+	
+	
+	</head>
+	
+	
+<style> * {box-sizing: border-box}</style>
+<body>
+	<h1 class="header">
+	Sweet Glaze
+	</h1>
+	
+	<nav id="navi"> 
+		<a href="index.html" class="btn">Home</a>
+		<a href="clay.html" class="btn">Clay</a> 
+		<a href="digital art.html" class="btn">Digital Art</a>
+		<a href="videos.html" class="btn">Videos</a>
+		<a href="contact.html" class="btn">Contact/Commissions</a>
+	</nav>
+	
+	<script>
+	
+	window.onscroll = function() {myFunction()};
+
+
+var navi = document.getElementById("navi");
+
+
+var sticky = navi.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navi.classList.add("sticky")
+  } else {
+    navi.classList.remove("sticky");
+  }
+}
+	</script>
+	
+	 <main>
+		 
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event,'Contact')" id="defaultOpen"> Contact Us</button>
+			<button class="tablinks" onclick="openTab(event,'Social')"> Find us</button>
+			
+		</div>
+		
+		<div id="Contact" class="tabcontent"> 
+			<h3> Contact Form</h3>
+			<div class="form">
+				
+				<form method="post" action="../php/action.php">
+					
+					
+					
+					<label for="name">Full Name </label>
+					<input type="text" id="name" name="name" placeholder="Enter your name..">
+					
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="Enter your email..">
+					
+					<label for="subforcontact"> Subject for Contact</label>
+					<select id="subforcontact" name="subforcontact">
+						<option value="adclay">Air Dry Clay </option>
+						<option value="pclay"> Polymer Clay</option>	
+						<option value="digart">Digital Art</option>
+						<option value="quest"> Others</option>
+							</select>
+					
+					<label for="content"> Message</label>
+					<textarea id="content" name="content" placeholder="Tell us more..." style="height:150px">
+					</textarea>
+					
+					<input type="submit" value="Submit">
+				</form>
+			
+			</div>
+		</div>
+		
+		<div id="Social" class="tabcontent"> 
+		 <h3> Find us here</h3>
+		 
+		 <p>
+			 <div class="findus">
+			<div class="row">
+				<a target="_blank" href="https://www.instagram.com/sweetglaze_arts/"> 
+				 <img src="../images/Logo/instagram logo.png" alt="Instagram" style="width:100%">
+					</a>
+				<div class="homedesc"> Check out our Instagram! </div>
+				 </div>
+			<div class="row">
+				<a target="_blank" href="https://youtube.com/channel/UC-BeNryG1TN-9UlAltELkrw"> 
+				 <img id="youtubeicon" src="../images/Logo/youtube logo.png" alt="YouTube" style="width:100%">
+				</a>
+				<div class="homedesc"> Check out our YouTube! </div>
+				 </div>
+			<div class="row">
+				<a target="_blank" href="https://www.redbubble.com/people/sweetglaze-arts/shop?asc=u">
+				 <img src="../images/Logo/red bubble .png" alt="Red Bubble" style="width:100%">
+				</a>
+					<div class="homedesc"> Check out our RedBubble Shop! </div>
+				 </div>
+			</div>
+			</p>
+		 </div>
+
+	
+	
+	
+	
+	
+	<script>
+		
+		function openTab(evt, contactName) {
+
+  var i, tabcontent, tablinks;
+			
+  tabcontent = document.getElementsByClassName("tabcontent");
+  
+			for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+			
+  tablinks = document.getElementsByClassName("tablinks");
+  
+			for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(contactName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+	
+document.getElementById("defaultOpen").click();
+		
+	</script>
+	
+	
+&nbsp;	
+	</main>
+	<footer>
+		<img src="../images/Logo/sweet glaze new.png" style="max-width: 10%">
+		<br>
+		
+Copyright © Sweet Glaze 2020</footer>
+	
+	
+</body>
+</html>

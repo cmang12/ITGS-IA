@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Videos</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1 class="header">
+	Sweet Glaze
+	</h1>
+	
+	<nav id="navi"> 
+		<a href="index.html" class="btn">Home</a>
+		<a href="clay.html" class="btn">Clay</a> 
+		<a href="digital art.html" class="btn">Digital Art</a>
+		<a href="videos.html" class="btn">Videos</a>
+		<a href="contact.html" class="btn">Contact/Commissions</a>
+	</nav>
+	
+
+	
+	
+	<style>
+		* box-sizing{
+			border-box;
+		}
+	
+	</style>
+	<main class="parent">
+
+		<div class="home4"> 
+			
+		 <section class="videocontainer"> 
+			<video class="slider" src="../videos/Video part 1.mp4" type="video/mp4" controls> 	 
+			 </video>
+		<ul>
+			<li> 
+				<video onclick="videoslider('../videos/Video part 1.mp4')" src="../videos/Video part 1.mp4" poster="../images/Thumbnail/Part 1 thumbnail.png"> </video>
+			</li>
+			<li> 
+				<video onclick="videoslider('../videos/video part 2.mp4')" src="../videos/video part 2.mp4" poster="../images/Thumbnail/Part 2 thumbnail.png"> </video>
+			</li>
+			<li> 
+				<video onclick="videoslider('../videos/video part 3.mp4')" src="../videos/video part 3.mp4" poster="../images/Thumbnail/Part 3 thumbnail.png"> </video>
+			</li>
+			<li> 
+				<video onclick="videoslider('../videos/video part 4.mp4')" src="../videos/video part 4.mp4" poster="../images/Thumbnail/Part 4 thumbnail.png"> </video>
+			</li>
+			 </ul>
+		
+		</section>
+			
+		<script>
+			
+			function videoslider(links){
+				
+				document.querySelector(".slider").src = links;
+			}
+			
+			</script>
+		
+</div>
+	</main> 
+	
+	<footer>
+		<img src="../images/Logo/sweet glaze new.png" style="max-width: 10%">
+		<br>
+	Copyright © Sweet Glaze 2020
+	</footer>
+</body>
+</html>

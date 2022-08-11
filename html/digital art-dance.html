@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dance Series</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1 class="header">
+	Sweet Glaze
+	</h1>
+	
+	<nav id="navi"> 
+		<a href="index.html" class="btn">Home</a>
+		<a href="clay.html" class="btn">Clay</a> 
+		<a href="digital art.html" class="btn">Digital Art</a>
+		<a href="videos.html" class="btn">Videos</a>
+		<a href="contact.html" class="btn">Contact/Commissions</a>
+	</nav>
+	
+	<script>
+	
+	window.onscroll = function() {myFunction()};
+
+
+var navi = document.getElementById("navi");
+
+
+var sticky = navi.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navi.classList.add("sticky")
+  } else {
+    navi.classList.remove("sticky");
+  }
+}
+	</script>
+	<main> 
+		<div class="descbox"> <h2> Dance Series</h2>
+			I made a dance group with my friends and i wanted to make art as teasers before we show our dance. I made them red and black because we agreed that it was a cool color pallete for the them of this dance cover.
+		</div>
+			<div class="textpage3"> click on the images to open lightbox! </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/dance/img-8.jpg" onclick="openModal();currentSlide(1)" alt="Red Album Cover Art" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> who dis.</div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/dance/img-9.jpg" onclick="openModal();currentSlide(2)" alt="Red Album Cover Art" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> ridin.</div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/dance/img-10.jpg" onclick="openModal();currentSlide(3)" alt="Red Album Cover Art" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> monster.</div>
+				</div>
+			 </div>
+		
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/dance/img-11.jpg" onclick="openModal();currentSlide(4)" alt="Red Album Cover Art" width="300px" height="300px"> 
+				
+				
+				<div class="desc"> Reversal.</div>
+				</div>
+			 </div>
+		<div class="responsive">
+			<div class="gallery">
+			
+				<img src="../images/Digital Art/dance/img-13.jpg" onclick="openModal();currentSlide(5)" alt="Red Album Cover Art" width="300px" height="300px"> 
+				
+				<div class="desc"> Play.</div>
+				</div>
+			 </div>
+			
+		<div class="clearfix"> </div>
+		
+		
+		
+		<div id="myModal" class="modal"> 
+			<span class="close cursor" onclick="closeModal()">&times; </span>
+			<div class="modal-content">
+				<div class="mySlides"> 
+					<div class="numbertext">1/5</div>
+					<img src="../images/Digital Art/dance/img-8.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">2/5</div>
+					<img src="../images/Digital Art/dance/img-9.jpg" style="width:100%">
+				</div>
+			<div class="mySlides">
+					<div class="numbertext">3/5</div>
+					<img src="../images/Digital Art/dance/img-10.jpg" style="width:100%">
+				</div>
+			<div class="mySlides">
+					<div class="numbertext">4/5</div>
+					<img src="../images/Digital Art/dance/img-11.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">5/5</div>
+					<img src="../images/Digital Art/dance/img-13.jpg" style="width:100%">
+				</div>
+			
+			
+			
+
+				
+				<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onClick="plusSlides(1)">&#10095;</a>
+				
+				
+			</div> 
+		
+		</div> 
+		
+
+		</main>
+	
+	<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+ 
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+ 
+
+}
+</script>
+	
+	<footer>
+		<img src="../images/Logo/sweet glaze new.png" style="max-width: 10%">
+		<br>
+	Copyright © Sweet Glaze 2020
+	</footer>
+</body>
+</html>
